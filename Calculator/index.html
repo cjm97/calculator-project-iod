@@ -13,38 +13,41 @@
         <input type="text" id="display" />
       </div>
       <div class="input__container">
-        <div class="input__row input__row--multiply">
+        <div class="input__row">
           <button onclick="clearDisplay('')">C</button>
-          <button onclick="getInput(`&#40;`)" value="&#40;">(</button>
-          <button onclick="getInput(`&#41;`)" value="&#41;">)</button>
-          <button onclick="getInput('*')" value="×">×</button>
+          <button onclick="getInput(`&#40;`)">(</button>
+          <button onclick="getInput(`&#41;`)">)</button>
+          <button onclick="getInput('*')">×</button>
+          <button onclick ="deleteInput('')">&#8617;</button>
         </div>
         <div class="input__row">
-          <button onclick="getInput('7')" value="7">7</button>
-          <button onclick="getInput('8')" value="8">8</button>
-          <button onclick="getInput('9')" value="9">9</button>
-          <button onclick="getInput('/')" value="÷">÷</button>
+          <button onclick="getInput('7')">7</button>
+          <button onclick="getInput('8')">8</button>
+          <button onclick="getInput('9')">9</button>
+          <button onclick="getInput('/')">÷</button>
+          <button onclick="getInput('**2')">&#119909;&#178;</button>
         </div>
         <div class="input__row">
-          <button onclick="getInput('4')" value="4">4</button>
-          <button onclick="getInput('5')" value="5">5</button>
-          <button onclick="getInput('6')" value="6">6</button>
-          <button onclick="getInput('-')" value="–">–</button>
+          <button onclick="getInput('4')">4</button>
+          <button onclick="getInput('5')">5</button>
+          <button onclick="getInput('6')">6</button>
+          <button onclick="getInput('-')">–</button>
+          <button onclick="getInput('**(1/2)')">&radic;</button>
         </div>
         <div class="input__row">
-          <button onclick="getInput('1')" value="1">1</button>
-          <button onclick="getInput('2')" value="2">2</button>
-          <button onclick="getInput('3')" value="3">3</button>
-          <button onclick="getInput('+')" value="+">+</button>
+          <button onclick="getInput('1')">1</button>
+          <button onclick="getInput('2')">2</button>
+          <button onclick="getInput('3')">3</button>
+          <button onclick="getInput('+')">+</button>
+          <button onclick="getInput('**(1/3)')">&#8731;</button>
         </div>
-        <div class="input__row input__row--equals">
-          <button onclick="getInput('0')" value="0">0</button>
-          <button onclick="getInput('.')" value=".">
-            .
-            <div class=""></div>
-          </button>
+        
+        <div class="input__row">
+          <button onclick="getInput('0')">0</button>
+          <button onclick="getInput('.')">.</button>
           <button value="%" onclick="getInput('%')">%</button>
-          <button onclick="calculateResult()" value="=">=</button>
+          <button onclick="calculateResult()" class="equalButton">=</button>
+          <button onclick="getInput('**')">𝑥 &#x036F;</button>
         </div>
       </div>
     </div>

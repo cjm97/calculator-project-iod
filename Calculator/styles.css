@@ -83,7 +83,10 @@ button:hover {
     display: flex;
 }
 
-.input__row--multiply, .input__row--equals {
-    display: flex;
-    justify-content: flex-end;
+
+
+.equalButton {
+    background-color: #D8524B;
+    border: 4px solid #200A09;
+    box-shadow: 2px 5px 5px 0px #200A09;
 }
